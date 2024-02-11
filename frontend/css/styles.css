@@ -1,0 +1,20 @@
+.container-fluid {
+	margin-top: 24px; 
+	margin-bottom: 24px;
+	max-width: 1600px;
+}
+
+.form-group {
+	padding-bottom: 5px;
+}
+
+#apartmentTable {
+	margin-top: 5px;
+}
+
+@media (max-width: 1600px) {
+    .container-fluid {
+        margin-top: 0px; 
+        margin-bottom: 0px;
+    }
+}

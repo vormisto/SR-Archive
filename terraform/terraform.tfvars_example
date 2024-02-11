@@ -1,0 +1,17 @@
+aws_region = "eu-north-1"
+aws_profile = "default"
+environment = "dev"
+build_dir = "/tmp"
+alarm_email = "monitor@example.com"
+alarm_frequency = 30
+application_name = "apartmentSearch"
+apartment_listing_website = "apartment-listing-website.com"
+apartments_table_name = "apartmentSearch_table2024"
+apartments_table_name_index = "apartmentSearch_table2024_GSI"
+s3_bucket_frontend = "apartmentSearch_s3_2024"
+custom_domain_enabled = true
+route53_hosted_domain = "example.com"
+cloudfront_domain = "apartments.example.com"
+cloudfront_geoblock = "whitelist"
+cloudfront_geoblock_countries = ["FI"]
+cloudfront_price_class = "PriceClass_100"

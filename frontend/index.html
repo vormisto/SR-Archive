@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/tabulator_bootstrap4.min.css">
+    <title>S&R ARCHIVE</title>
+  </head>
+  <body>
+    <div class="container-fluid card card-body">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <h1 class="display-1">S&R ARCHIVE</h1>
+          <p class="lead">Sold and rented archive is a website that monitors for removed property listings.</p>
+          <p class="lead">Type in the city name, select the type of listing and the date range to search for removed listings. Table filters can be used for more detailed searching.</p>
+        </div>
+
+        <div class="col-md-5" id="search">
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card mt-3 h-100">
+                    <div class="card-body">
+                        <h6 class="card-title">City</h6>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="searchCity" placeholder="Enter city">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <div class="card mt-3 h-100">
+                <div class="card-body">
+                  <h6 class="card-title">Select listing type</h6>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="RENT">
+                        <label class="form-check-label" for="RENT">
+                          Rent
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="type" id="SELL" checked>
+                        <label class="form-check-label" for="SELL">
+                          Sell
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="card mt-3">
+            <div class="card-body">
+                <h6 class="card-title">When was the listing removed</h6>
+                <div class="row">
+                    <div class="col-md-6 pr-1">
+                        <div class="form-group">
+                            <label for="fromDate">From</label>
+                            <input type="date" class="form-control" id="fromDate">
+                        </div>
+                    </div>
+                    <div class="col-md-6 pl-1">
+                        <div class="form-group">
+                            <label for="toDate">To</label>
+                            <input type="date" class="form-control" id="toDate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="card mt-3">
+              <button type="submit" id="searchBtn" class="btn btn-primary btn-block">Search</button>
+          </div>
+        </div>
+      </div>
+      <div id="apartmentTable"></div>
+    </div>
+    <script type="text/javascript" src="js/tabulator.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

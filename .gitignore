@@ -1,0 +1,17 @@
+.DS_Store
+.terraform.lock.hcl
+*.tfplan
+*.tfvars
+*.tfstate
+*.tfstate.*
+**/.terraform/*
+
+# There can be some build files, we only want check.py and requirements.txt
+lambda/check/*
+!lambda/check/check.py
+!lambda/check/requirements.txt
+
+# There can be some build files, we only want fetch.py and requirements.txt
+lambda/fetch/*
+!lambda/fetch/fetch.py
+!lambda/fetch/requirements.txt
