@@ -4,8 +4,6 @@ This repository contains application and IaC code. Terraform is used to deploy t
 
 This application fetches new property listings from listing website and then monitors when listings get removed. Application contains API and website to view removed listings. 
 
-Demo: [apartments.aws.vormisto.fi](https://apartments.aws.vormisto.fi/)
-
 ## How does it work
 
 ### Diagram
